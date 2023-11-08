@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Share Your Travels -- New York - Central Park</title> <!--서버에 연결했을때 뜨는 글자-->
+</head>
+
+<body>
+	<header>
+		<h1>Share Your Travels</h1>
+		<h2>New York - Central Park</h2>
+
+		<!-- Goal 1 : anchors and links -->
+		<nav> <!--navigation-->
+			<ul><!--순서 없는 list-->
+				<li><a href="#description">Description</a></li> <!--#을 쓰면 같은 page의 저 id값을 가지고 있는 곳으로 이동-->
+				<li><a href="#Related Photos">Related Photos</a></li> <!--a는 링크로 연결가능하게 해줌-->
+				<li><a href="#reviews">Reviews</a></li>
+			</ul>
+		</nav>
+
+	</header>
+	<article>
+		<section>
+			<h3 id="description">Description</h3><!--id값은 고유해야함-->
+			<p>Photo by Randy Connolly</p>
+			<p>This photo of Conservatory Pond in
+				<a href="http://www.centralpark.com/">Central Park</a> in <!--중간에 링크를 삽입해도 줄 바꿈은 일어나지 않음-->
+				<a href="https://en.wikipedia.org/wiki/New_York_City">New York City</a> was
+				taken on October 22, 2011 with a Canon EOS 30D camera.
+			</p>
+			<figure> <!--figure는 이미지,도표 같은거 넣을때 쓰는거임-->
+
+				<!-- Goal 2 : use "images/central-park.jpg" --> 
+				<img src ="images/central-park.jpg" alt="Central Park"/><br/> <!-- alt는 이미지가 없을때 대신해서 나타낼 글자-->
+				<figcaption>Conservatory Pond in Central Park</figcaption> <!--이미지 위나 밑에 적힐 글자 -->
+
+			</figure>
+			<p>Share:
+				<img src="images/social/email_16.png" alt="Email this to someone" />
+				<img src="images/social/rss_16.png" alt="Syndicated content" />
+				<img src="images/social/twitter_16.png" alt="Share this on Twitter" />
+				<img src="images/social/facebook_16.png" alt="Share this on Facebook" />
+				<img src="images/social/flickr_16.png" alt="See this on Flickr" />
+			</p>
+		</section>
+
+		<section>
+
+			<!-- Goal 3 -->
+			<!-- use : "images/related-square1.jpg" and "images/related-large1.jpg" -->
+			<!-- use : "images/related-square2.jpg" and "images/related-large2.jpg" -->
+			<!-- use : "images/related-square3.jpg" and "images/related-large3.jpg" -->
+			<h3 id="Related Photos">Related Photos</h3>
+			<table> <!--표 형식으로 할거다라는 표시-->
+				<tr> <!--table row : 행을 의미함 ;; 여기선 tr이 하나만 쓰였으니까 하나의 행에 3열을 가진 표가 만들어질것-->
+					<td><a href = "images/related-large1.jpg"> <!--table data : 각 열에 들어갈 내용을 정의-->
+						<img src = "images/related-square1.jpg" alt = "photo1"> <!--이미지를 클릭했을때 링크해둔 이미지로 넘어가게 설정한 코드-->
+						</a>
+					</td>
+					<td><a href = "images/related-large2.jpg">
+						<img src = "images/related-square2.jpg" alt = "photo2">
+						</a>
+					</td>
+					<td><a href = "images/related-large3.jpg">
+						<img src = "images/related-square3.jpg" alt = "photo3">
+						</a>
+					</td>
+				</tr>
+				
+			</table>
+
+		</section>
+
+		<section>
+			<h3 id="reviews">Reviews</h3>
+			<div>
+				<p>By Ricardo on <time>September 15, 2012</time></p>
+				<p>Easy on the HDR buddy.</p>
+			</div>
+			<hr /> <!--수평줄을 의미하는 코드 쌍으로 존재하지 않고 단독으로 사용됨-->
+			<div>
+				<p>By Susan on <time>October 1, 2012</time></p>
+				<p>I love Central Park.</p>
+			</div>
+			<hr />
+		</section>
+	</article>
+	<footer>
+		<p><a href="#">Home</a> | <a href="#">Browse</a> | <a href="#">Search</a></p>
+		<p><em>Copyright &copy; 2013 Share Your Travels</em></p> <!--&copy는 저 로고를 나오게 함;; em은 글자가 조금 기울어지게 만듦-->
+	</footer>
+</body>
+
+</html>
