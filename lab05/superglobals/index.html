@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>GET Request Form</title>
+</head>
+<body>
+    <h3>Use GET request, processed by process-get.php</h3>
+    
+    <form action="process-get.php" method="get"> 
+        <p>Your Name: <input type="text" id="name" name="name"></p>
+        <p>Your Favorite Language:
+            <input type="radio" id="html" name="favorite-language" value="HTML">
+            <label for="html">HTML</label>
+            <input type="radio" id="js" name="favorite-language" value="JS">
+            <label for="js">JS</label>
+            <input type="radio" id="php" name="favorite-language" value="PHP">
+            <label for="php">PHP</label>
+            <br>
+            <input type="submit" value="submit">
+        </p>
+    </form> 
+    
+    <hr>
+    <h3>Use POST request, processed by process-post.php</h3>
+    
+    <form action="process-post.php" method="post">
+        <p>Your Name: <input type="text" id="name" name="name"></p>
+        <p>Your Favorite Language:
+            <input type="radio" id="html" name="favorite-language" value="HTML">
+            <label for="html">HTML</label>
+            <input type="radio" id="js" name="favorite-language" value="JS">
+            <label for="js">JS</label>
+            <input type="radio" id="php" name="favorite-language" value="PHP">
+            <label for="php">PHP</label>
+            <br>
+            <input type="submit" value="submit">
+        </p>
+    </form>
+</body>
+</html>
